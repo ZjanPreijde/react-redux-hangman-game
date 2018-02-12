@@ -1,0 +1,14 @@
+{
+type: 'SET_GUESSES',
+payload: ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i']
+}
+
+{
+type: 'SET_GUESSES',
+payload: ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j']
+}
+
+{
+type: 'SET_GUESSES',
+payload: ['s', 'u', 'p', 'e', 'r', 'c', 'o', 'm', 'l', 'x', 'a', 'w', 'd']
+}

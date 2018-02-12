@@ -1,13 +1,24 @@
 import React, { Component } from 'react';
-import logo from './HangMan.png';
-
+// import { connect } from 'react-redux'
+// Logo
+import logo from './images/HangMan.png';
+// Component
 import HangMan from './hangman/HangMan.js'
-
+// Styling
 import './App.css';
 
-const guesses = ["a", "b"]
+const word = "supercomplexpassword"
+const guesses = []
 
 class App extends Component {
+
+  // setGuesses = (newGuesses) => {
+  //   console.log('App - setGuesses: Button Guess apparently clicked')
+  //   console.log("App - setGuesses: New Guesses", newGuesses)
+  //   console.log("App - setGuesses: Now what???")
+  //   // this.setState({ guesses: newGuesses })
+  // }
+
   render() {
     return (
       <div className="App">
@@ -15,9 +26,7 @@ class App extends Component {
           <img src={logo} className="App-logo" alt="logo" />
           <h1 className="App-title">Welcome to Hangman</h1>
         </header>
-          <HangMan guesses={guesses}/>
-          <p className="App-intro">
-        </p>
+        <HangMan word={ word } guesses={ guesses }/>
       </div>
     );
   }
